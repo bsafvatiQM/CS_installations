@@ -1,0 +1,32 @@
+[quam]
+state_path = "C:\\Users\\BenjaminSafvati\\Customers\\Murch\\blue_fridge\\quam_state"
+raise_error_missing_reference = false
+version = 2
+
+[qualibrate]
+version = 5
+project = "Murch_blue"
+log_folder = "C:\\Users\\BenjaminSafvati\\Customers\\Murch\\logs"
+
+[qualibrate.storage]
+type = "local_storage"
+location = "C:\\Users\\BenjaminSafvati\\Customers\\Murch\\blue_fridge\\user_storage\\${#/qualibrate/project}"
+
+[qualibrate.app]
+
+[qualibrate.runner]
+address = "http://127.0.0.1:8001/execution/"
+timeout = 1.0
+
+[qualibrate.composite.app]
+spawn = true
+
+[qualibrate.composite.runner]
+spawn = true
+
+[qualibrate.composite.qua_dashboards]
+spawn = true
+
+[qualibrate.calibration_library]
+folder = "C:\\Users\\BenjaminSafvati\\Customers\\Murch\\blue_fridge\\calibrations"
+resolver = "qualibrate.QualibrationLibrary"
