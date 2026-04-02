@@ -1,0 +1,62 @@
+{
+    "wiring": {
+        "qubits": {
+            "q1": {
+                "rr": {
+                    "opx_input_Q": "#/ports/analog_inputs/con1/2",
+                    "opx_input_I": "#/ports/analog_inputs/con1/1",
+                    "opx_output_I": "#/ports/analog_outputs/con1/9",
+                    "opx_output_Q": "#/ports/analog_outputs/con1/10",
+                    "frequency_converter_down": "#/mixers/mixer4_q1.rr",
+                    "frequency_converter_up": "#/mixers/mixer4_q1.rr"
+                },
+                "xy": {
+                    "opx_output_I": "#/ports/analog_outputs/con1/3",
+                    "opx_output_Q": "#/ports/analog_outputs/con1/4",
+                    "frequency_converter_up": "#/mixers/mixer1_q1.xy"
+                }
+            },
+            "qC": {
+                "rr": {
+                    "opx_input_Q": "#/ports/analog_inputs/con1/2",
+                    "opx_input_I": "#/ports/analog_inputs/con1/1",
+                    "opx_output_I": "#/ports/analog_outputs/con1/9",
+                    "opx_output_Q": "#/ports/analog_outputs/con1/10",
+                    "frequency_converter_down": "#/mixers/mixer4_qC.rr",
+                    "frequency_converter_up": "#/mixers/mixer4_qC.rr"
+                },
+                "xy": {
+                    "opx_output_I": "#/ports/analog_outputs/con1/9",
+                    "opx_output_Q": "#/ports/analog_outputs/con1/10",
+                    "frequency_converter_up": "#/mixers/mixer3_qC.xy"
+                },
+                "z": {
+                    "opx_output": "#/ports/analog_outputs/con1/1"
+                }
+            },
+            "q2": {
+                "rr": {
+                    "opx_input_Q": "#/ports/analog_inputs/con1/2",
+                    "opx_input_I": "#/ports/analog_inputs/con1/1",
+                    "opx_output_I": "#/ports/analog_outputs/con1/9",
+                    "opx_output_Q": "#/ports/analog_outputs/con1/10",
+                    "frequency_converter_down": "#/mixers/mixer4_q2.rr",
+                    "frequency_converter_up": "#/mixers/mixer4_q2.rr"
+                },
+                "xy": {
+                    "opx_output_I": "#/ports/analog_outputs/con1/5",
+                    "opx_output_Q": "#/ports/analog_outputs/con1/6",
+                    "frequency_converter_up": "#/mixers/mixer2_q2.xy"
+                },
+                "z": {
+                    "opx_output": "#/ports/analog_outputs/con1/2"
+                }
+            }
+        }
+    },
+    "network": {
+        "host": "10.225.208.230",
+        "port": null,
+        "cluster_name": "Cluster_1"
+    }
+}

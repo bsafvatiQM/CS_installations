@@ -1,0 +1,77 @@
+{
+    "twpa": {
+        "freq": 9380068209,
+        "power": -4.028,
+        "flux_current": 4.6e-05
+    },
+    "context_dc_offsets": {
+        "DC_offset9_readout": 0.0004817480598451605,
+        "DC_offset10_readout": 0.0008046754548845005,
+        "DC_offset9_qubit": -0.0718571582803278,
+        "DC_offset10_qubit": -0.02467428047312654,
+        "DC_offset7": 0,
+        "DC_offset8": 0
+    },
+    "constant_pi_pulses": {
+        "Q1_DL_x180_len": 40,
+        "Q1_DL_x180_amp": 0.0765647284080109,
+        "Q2_DL_x180_len": 40,
+        "Q2_DL_x180_amp": 0.05013246858376478,
+        "QC_x180_len": 40,
+        "QC_x180_amp": 0.06203480463689964
+    },
+    "drag_gaussian_pulses": {
+        "Q1_DL_x180_drag_amp": 0.07560571461697005,
+        "Q1_DL_x180_drag_coef": 0.0,
+        "Q2_DL_x180_drag_amp": 0.049380320852303525,
+        "Q2_DL_x180_drag_coef": 0.0
+    },
+    "ef_transitions": {
+        "Q1_ef_freq": 4023814139,
+        "Q2_ef_freq": 4127072171,
+        "QC_ef_freq": 5101362016,
+        "Q1_ef_DL_x180_len": 40,
+        "Q1_ef_DL_x180_amp": 0.05642961505099825,
+        "Q2_ef_DL_x180_len": 40,
+        "Q2_ef_DL_x180_amp": 0.04388597478246521,
+        "QC_ef_x180_len": 40,
+        "QC_ef_x180_amp": 0.03714367410678137
+    },
+    "ef_mixer_corrections": {
+        "Q1_ef_DL_mixer_C_matrix": [
+            1.0502005787220077,
+            0.006637196628680109,
+            0.007302567802385714,
+            0.9545118825537525
+        ],
+        "Q2_ef_DL_mixer_C_matrix": [
+            1.0128602622622311,
+            0.05351349031944028,
+            0.054421242956417135,
+            0.9959656357522501
+        ],
+        "QC_ef_mixer_C_matrix": [
+            1.0,
+            0.0,
+            -0.07293313540336482,
+            0.6731512918539873
+        ]
+    },
+    "parametric_drives": {
+        "pd_CZ_amp": 0.29,
+        "pd_CZ_freq": 122834586,
+        "pd_CZ_square_len": 344,
+        "pd_CZ_square_phase_comp_Q1": 0.3201895780785564,
+        "pd_CZ_square_phase_comp_Q2": 0.11890000000000056,
+        "pd_CZ_gaussian_flat_len": 408,
+        "pd_CZ_gaussian_flat_phase_comp_Q1": 0.10192314920538514,
+        "pd_CZ_gaussian_flat_phase_comp_Q2": 0.10685000000000056,
+        "pd_CZ_slepian_flat_len": 392,
+        "pd_CZ_slepian_flat_phase_comp_Q1": 0.32375342141356467,
+        "pd_CZ_slepian_flat_phase_comp_Q2": 0.11920000000000053,
+        "pd_sqrt_iSWAP_len": 100,
+        "pd_sqrt_iSWAP_freq": 50300000,
+        "pd_iSWAP_len": 200,
+        "pd_iSWAP_freq": 50400000
+    }
+}
