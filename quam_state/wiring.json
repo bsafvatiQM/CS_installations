@@ -1,0 +1,62 @@
+{
+    "wiring": {
+        "qubits": {
+            "q2": {
+                "rr": {
+                    "opx_input_I": "#/ports/analog_inputs/con1/1",
+                    "opx_input_Q": "#/ports/analog_inputs/con1/2",
+                    "opx_output_I": "#/ports/analog_outputs/con1/9",
+                    "opx_output_Q": "#/ports/analog_outputs/con1/10",
+                    "frequency_converter_down": "#/mixers/mixer1_q2.rr",
+                    "frequency_converter_up": "#/mixers/mixer1_q2.rr"
+                },
+                "xy": {
+                    "opx_output_I": "#/ports/analog_outputs/con1/3",
+                    "opx_output_Q": "#/ports/analog_outputs/con1/4",
+                    "frequency_converter_up": "#/mixers/mixer2_q2.xy"
+                }
+            },
+            "q3": {
+                "rr": {
+                    "opx_input_I": "#/ports/analog_inputs/con1/1",
+                    "opx_input_Q": "#/ports/analog_inputs/con1/2",
+                    "opx_output_I": "#/ports/analog_outputs/con1/9",
+                    "opx_output_Q": "#/ports/analog_outputs/con1/10",
+                    "frequency_converter_down": "#/mixers/mixer1_q3.rr",
+                    "frequency_converter_up": "#/mixers/mixer1_q3.rr"
+                }
+            },
+            "q4": {
+                "rr": {
+                    "opx_input_I": "#/ports/analog_inputs/con1/1",
+                    "opx_input_Q": "#/ports/analog_inputs/con1/2",
+                    "opx_output_I": "#/ports/analog_outputs/con1/9",
+                    "opx_output_Q": "#/ports/analog_outputs/con1/10",
+                    "frequency_converter_down": "#/mixers/mixer1_q4.rr",
+                    "frequency_converter_up": "#/mixers/mixer1_q4.rr"
+                }
+            }
+        },
+        "qubit_pairs": {
+            "q2-3": {
+                "c": {
+                    "control_qubit": "#/qubits/q2",
+                    "target_qubit": "#/qubits/q3",
+                    "opx_output": "#/ports/analog_outputs/con1/1"
+                }
+            },
+            "q3-4": {
+                "c": {
+                    "control_qubit": "#/qubits/q3",
+                    "target_qubit": "#/qubits/q4",
+                    "opx_output": "#/ports/analog_outputs/con1/2"
+                }
+            }
+        }
+    },
+    "network": {
+        "host": "10.225.208.35",
+        "port": null,
+        "cluster_name": "Cluster_1"
+    }
+}
